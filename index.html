@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+  
+    <title>Webtech Task</title>
+  </head>
+
+  <body>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skillz" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+     
+    </nav>
+    
+    <section class="Intro" id="about">
+      <img
+        src="assets/images/255783033_595742031503609_68286404024118343_n.jpg" alt="Avatar"
+        class="Intro-img"
+      />
+      <div class="bio a">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hello, I'm Maruf Shahriar
+        </p>
+      </div>
+    </section>
+
+
+    <section class="more-about">
+      <div class="bio a">
+       <h2>More About Me</h2>
+      <p>
+        Hello again,
+      </p>
+      <p>
+        I'm Maruf Shahriar, a CSE student currently at AIUB. <br>
+        Currently i'm trying to make my own portfolio.  
+      </p>
+    </div>
+    </section>
+    <section class="skillz" id="skillz">
+    <br><br><br>
+    <br><br><br>
+    
+      <h2 style="text-align:center" class="skill-header"><u>My Skills</u></h2><br>
+      <p>HTML</p>
+      <div class="container">
+        <div class="skills html">90%</div>
+      </div>
+      
+      <p>CSS</p>
+      <div class="container">
+        <div class="skills css">80%</div>
+      </div>
+      
+      <p>Python</p>
+      <div class="container">
+        <div class="skills js">65%</div>
+      </div>
+      
+      <p>PHP</p>
+      <div class="container">
+        <div class="skills php">60%</div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <br><br><br>
+    <br><br><br>
+    <h2 class="projects-title"><u>My Recent Projects</u></h2>
+    <div class="projects-container">
+      <div class="project-container project-card"> 
+        <h3 class="project-title">Travel Guide Website</h3>
+        <p class="project-details">
+          The goal of the website is to help people navigate and explore various historic and tourist spots easily and efficiently. 
+          <br> The website provides crucial information about tickets,hotels,travel guides etc.
+          <br> It makes planning tours easier and better.
+        </p>
+        <a href="#" target="_blank" class="project-link">Click Here to Find More Information</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="assets/images/Screenshot (939).png"
+          loading="lazy"
+          class="project-pic"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2><u>Contact</u></h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
