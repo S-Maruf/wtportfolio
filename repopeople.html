@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+  background-image: url('733839.jpg');
+ 
+}
+    table,
+    th,
+    td {
+        border: 1px solid rgb(253, 239, 239);
+        border-collapse: collapse;
+        transform: translateY(-50%);
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+.container{
+    width: 1000px; 
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    align-items: center;
+    
+}
+.container button:hover{
+    background: rgba(224, 33, 33, 0.9); 
+    }
+    
+    .wrapper button{
+    display: none;
+    }
+    .wrapper button:hover {
+    display: block;
+    }
+.table{
+    color:azure;
+    text-align: center;
+}
+</style>
+<body>
+    <h2 style= "font-size:300%; text-align: center; color: azure;" ><u>The XMLHttpRequest Object</u></h2>
+    <div id="Id"></div>
+    <div class="container">
+    <button type="button" onclick="loadDoc()">Load github users</button>
+</div>
+    <br /><br />
+    <table id="demo"></table>
+    <script>
+        function loadDoc() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://api.github.com/users");
+            xhr.send();
+            xhr.onload = function() {
+                const data = xhr.response;
+                var people = JSON.parse(data);
+                var output = ' ';
+                for (var i = 0; i < 15; i++) {
+                    output +=
+                        '<div class = "table">' + '<img src="' + people[i].avatar_url + '" width="500px" height="500px">' +
+                        '<ul>' +
+                        '<li>ID: ' + people[i].id + '</li>' +
+                        '<li>Login: ' + people[i].login + '</li>' +
+                        '</ul>' +
+                        '</div>';
+                }
+                document.getElementById("Id").innerHTML = output;
+            };
+        }
+    </script>
+</body>
+</html>
